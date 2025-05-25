@@ -322,12 +322,21 @@ nav ul li a:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .navbar{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
     header {
-        padding: 15px 10px;
+        /* padding: 15px 10px; */
+        display: flex;
+        align-items: center;
         justify-content: center;
     }
     
-    .logo img {
+    .logo{
+        display: flex;
         width: 50px !important;
         height: auto;
     }
@@ -454,6 +463,7 @@ input:focus {
     outline: none;
     width: max-content;
     height: auto;
+    cursor: pointer;
 }
 #submit-btn a{
     text-decoration: none;
